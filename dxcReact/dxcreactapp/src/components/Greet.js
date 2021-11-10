@@ -6,6 +6,7 @@ import React from 'react'
 
 const Greet = (props) => {
     console.log(props);
+    //props.name = 'dxc'
     return (
         <div>
             <h1> hello {props.name} you are from {props.college}</h1>
