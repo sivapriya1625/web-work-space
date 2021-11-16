@@ -19,11 +19,13 @@ import React, { Component } from 'react'
     }
 
      render() {
-         //using bind im typing to this keyword
+         //using bind im typing to this keyword.-- binding in render method
         return (
             <div>
                 <div>{this.state.message}</div>
-                <button onClick = {this.clickHandler.bind(this)}>click</button>
+                
+               { /*<button onClick = {this.clickHandler.bind(this)}>click</button> */} 
+                <button onClick = {() => this.clickHandler()}>click</button>
             </div>
         )
     }
