@@ -10,8 +10,8 @@ class EventBind extends Component {
         }
         this.clickHandler = this.clickHandler.bind(this)
     }
-
-    clickHandler() {
+    // var a = 10
+    clickHandler = () => {
         console.log(this)
         this.setState({
             message: 'good bye'
