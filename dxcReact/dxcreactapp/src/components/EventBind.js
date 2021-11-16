@@ -1,31 +1,33 @@
 import React, { Component } from 'react'
 
- class EventBind extends Component {
+class EventBind extends Component {
     constructor(props) {
         super(props)
-    
+
         this.state = {
             message: 'Hello'
-             
+
         }
+        this.clickHandler = this.clickHandler.bind(this)
     }
-    
-    clickHandler(){
+
+    clickHandler() {
         console.log(this)
         this.setState({
             message: 'good bye'
 
-        })  
+        })
     }
 
-     render() {
-         //using bind im typing to this keyword.-- binding in render method
+    render() {
+        //using bind im typing to this keyword.-- binding in render method
         return (
             <div>
                 <div>{this.state.message}</div>
-                
-               { /*<button onClick = {this.clickHandler.bind(this)}>click</button> */} 
-                <button onClick = {() => this.clickHandler()}>click</button>
+
+                { /*<button onClick = {this.clickHandler.bind(this)}>click</button> */}
+                {/* <button onClick = {() => this.clickHandler()}>click</button> */}
+                <button onClick={this.clickHandler}>click</button>
             </div>
         )
     }
