@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+function App() {
+  return (
+    <div className="App"><Stylesheet  enabled = {false}/>
+    <Table/>
+    <NameList/>
+    <UserGreeting/></div>
+  )
+}
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});

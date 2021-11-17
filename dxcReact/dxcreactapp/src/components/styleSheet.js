@@ -1,12 +1,12 @@
 import React from 'react'
 import './myStyles.css'
 
-function Stylesheet() {
-    return (
-        <div>
-            <h1 className = 'primary'> welcome to style sheets</h1>
-        </div>
-    )
-}
+function Stylesheet(props) {
 
-export default Stylesheet
+    let className = props.enabled ? 'primary' : ''
+    return (
+        <div><h1 className = {className}> welcome to style sheets</h1>
+        </div>
+         )
+        }
+        
