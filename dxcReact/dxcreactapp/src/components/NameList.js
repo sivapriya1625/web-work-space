@@ -4,9 +4,9 @@ function NameList() {
     const names = ['priya','shiva','swetha']
     return (
         <div>
-            <h2>{names[0]}</h2>
-            <h2>{names[1]}</h2>
-            <h2>{names[2]}</h2>
+            {
+                names.map(names =><h2>{names}</h2>)
+            }
 
         </div>
     )
