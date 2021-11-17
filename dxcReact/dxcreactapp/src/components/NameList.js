@@ -1,7 +1,7 @@
 import React from 'react'
 
 function NameList() {
-    const names = ['priya','shiva','swetha']
+    const names = ['priya','shiva','swetha','dxc']
     return (
         <div>
             {
