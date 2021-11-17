@@ -9,7 +9,7 @@ function ChildComponent(props){
     
         return (
             <div>
-                <button onClick = {props.priyaHandler}>greet parent</button>
+                <button onClick = {() => props.priyaHandler('aryan')}>greet parent</button>
             </div>
         )
     }
