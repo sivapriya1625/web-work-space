@@ -7,7 +7,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 function App() {
   return (
-    <div className="App"><Stylesheet  enabled = {false}/>
+    <div className="App"><Stylesheet  enabled = {true}/>
     <Table/>
     <NameList/>
     <UserGreeting/></div>
