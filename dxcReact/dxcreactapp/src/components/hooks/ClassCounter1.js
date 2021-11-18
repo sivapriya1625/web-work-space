@@ -23,6 +23,7 @@ function CounterHook1() {
                 <button onClick = { ()=> setCount(count+1)}>Click {count} times</button>
             </div>
         )
+                }
     
    
     

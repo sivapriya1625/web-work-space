@@ -1,12 +1,16 @@
 import './App.css';
 import ClassCounter1 from './components/hooks/useeffect/ClassCounter1';
+import ClassMouse from './components/hooks/useeffect/ClassMouse';
 import CounterHook1 from './components/hooks/useeffect/CounterHook1';
- import HookCounter3 from './components/hooks/HookCounter3';
+import HookMouse from './components/hooks/useeffect/HookMouse';
+
+
+
+ import CounterHook1 from './components/hooks/useeffect/CounterHook1';
 function App() {
   return (
     <div className="App">
-      <CounterHook1/>
+      <HookMouse/>
     </div>
-    
   );
 }
