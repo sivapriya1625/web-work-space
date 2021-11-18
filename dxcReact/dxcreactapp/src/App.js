@@ -7,5 +7,6 @@ function App() {
     <div className="App">
       <CounterHook1/>
     </div>
+    
   );
 }
