@@ -12,17 +12,19 @@ import React, { Component } from 'react'
 
     componentDidMount(){
        this.inputRef.current.focus()
-        console.log(this.inputRef)
+       console.log(this.inputRef)
     }
 
+clickHandler = () => {
+    alert(this.inputRef.current.value)
+}
 
     render() {
         return (
             <div>
                 <input type = "text" ref = {this.inputRef}/>
+                <button onClick = {this.clickHandler}> fetch value</button>
             </div>
         )
     }
 }
-
-export default RefsDemo
