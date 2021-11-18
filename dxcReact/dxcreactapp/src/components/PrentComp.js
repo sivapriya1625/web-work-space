@@ -4,13 +4,21 @@ import PureComp from './PureComp';
 import RegularComp from './RegularComp';
 
  constructor(props) 
-    componentDidMount()
-        setInterval(() => {
-            this.setState({
-                name: 'abdul-parentcomp-memo'
-            })
-        }, 2000);
-    
+
+
+
+/**
+ * im setting the state after every 2 secs,
+ * but im setting the same value in the name field of the state
+ * regular component re renders though the value in the state's name field hasn't changed
+ * but a pure component will not re-render --- because it'll do a shallow comparison
+ */
+ componentDidMount()
+    setInterval(() => {
+        this.setState({
+            name: 'abdul-parentcomnew'
+        })
+    }, 2000);
 
 
  constructor(props)
