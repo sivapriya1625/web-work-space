@@ -1,17 +1,18 @@
+import logo from './logo.svg';
 import './App.css';
-import ClassMouse from './components/hooks/useeffect/ClassMouse';
-import CounterHook1 from './components/hooks/useeffect/CounterHook1';
-import HookMouse from './components/hooks/useeffect/HookMouse';
-import MouseContainer from './components/hooks/useeffect/MouseContainer';
+import DataFetching from './components/useeffecthook/DataFetching';
+import ComponentA from './components/contexthook/ComponentA';
+import React from 'react';
 
 
-
- import HookMouse from './components/hooks/useeffect/HookMouse';
+export const UserContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <UserContext.Provider value = {'abdul'} >
+        <ComponentA/>
+     </UserContext.Provider>
     </div>
   );
 }
