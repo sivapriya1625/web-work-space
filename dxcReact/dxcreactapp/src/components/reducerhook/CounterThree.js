@@ -31,4 +31,4 @@ function CounterThree() {
     )
 }
 
-export default CounterThrees
+export default CounterThree
